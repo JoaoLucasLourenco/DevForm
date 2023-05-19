@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Jão Form</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 id="title">
+        Dev Form
+        </h1>
+        <p id="description">
+        Obrigado por acessar meu formulário
+        </p>
+    </div>
+    <div class="container">
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            
+            <label id="name-label" for="name">Nome
+                <input id="name" required placeholder="Enter your name"/>
+            </label>
+
+            <label id="email-label" for="email">Email
+                <input id="email" type="email" required placeholder="Enter your email"/>
+            </label>
+
+            <label id="number-label" for="number">Idade
+                <input type="number" id="number" min="10" max="120" placeholder="Age"/>
+            </label>
+        
+            <div class="margintop">
+                <label for="estagio">Em qual nível profissional você está?
+                <input id="estagio" type="radio" name="nivel-profissional" class="inline">Estágio
+                </label>
+                <label for="junior">
+                <input id="junior" type="radio" name="nivel-profissional" class="inline">Júnior
+                </label>
+                <label for="pleno">
+                <input id="pleno" type="radio" name="nivel-profissional"class="inline">Pleno
+                </label>
+                <label for="senior">
+                <input id="senior" type="radio" name="nivel-profissional"class="inline">Sênior
+                </label>
+            </div>
+            <div class="margintop">
+                <label for="dropdown">Qual área você prefere?
+                <select id="dropdown">
+                    <option>Selecione uma opção</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                </select>
+                </label>
+            </div>
+            <label>
+                O que seria necessário atualizar primeiro?
+            <input type="checkbox" value="1"/>
+                HTML
+            </label>
+
+            <label>
+                
+            <input type="checkbox" value="2"/>
+                CSS
+            </label>
+        
+            <label for="">
+            <textarea id="text" cols="30" rows="3" placeholder="Deixe seu comentário aqui..."></textarea>
+            </label>  
+            
+            <input type="submit" id="submit"/>
+        </form>
+    </div>
+</body>
+</html>
