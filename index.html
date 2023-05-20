@@ -18,20 +18,21 @@
     </div>
     <div class="container">
         <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
-            
-            <label id="name-label" for="name">Nome
-                <input id="name" required placeholder="Enter your name"/>
-            </label>
+            <div class="form-group">
+                <label id="name-label" for="name">Nome
+                    <input id="name" required placeholder="Enter your name"/>
+                </label>
 
-            <label id="email-label" for="email">Email
-                <input id="email" type="email" required placeholder="Enter your email"/>
-            </label>
+                <label id="email-label" for="email">Email
+                    <input id="email" type="email" required placeholder="Enter your email"/>
+                </label>
 
-            <label id="number-label" for="number">Idade
-                <input type="number" id="number" min="10" max="120" placeholder="Age"/>
+                <label id="number-label" for="number">Idade
+                    <input type="number" id="number" min="10" max="120" placeholder="Age"/>
             </label>
-        
-            <div class="margintop">
+            </div>
+            <hr>
+            <div class="form-group">
                 <label for="estagio">Em qual nível profissional você está?
                 <input id="estagio" type="radio" name="nivel-profissional" class="inline">Estágio
                 </label>
@@ -45,7 +46,8 @@
                 <input id="senior" type="radio" name="nivel-profissional"class="inline">Sênior
                 </label>
             </div>
-            <div class="margintop">
+            <hr>
+            <div class="form-group">
                 <label for="dropdown">Qual área você prefere?
                 <select id="dropdown">
                     <option>Selecione uma opção</option>
@@ -54,21 +56,24 @@
                 </select>
                 </label>
             </div>
-            <label>
-                O que seria necessário atualizar primeiro?
-            <input type="checkbox" value="1"/>
-                HTML
-            </label>
-
-            <label>
-                
-            <input type="checkbox" value="2"/>
-                CSS
-            </label>
-        
-            <label for="">
-            <textarea id="text" cols="30" rows="3" placeholder="Deixe seu comentário aqui..."></textarea>
-            </label>  
+            <div class="form-group">
+                <label>
+                    O que seria necessário atualizar primeiro?
+                <input type="checkbox" value="1" class="inline"/>
+                    HTML
+                </label>
+                <label>  
+                <input type="checkbox" value="2" class="inline"/>
+                    CSS
+                </label>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="text">
+                    Deixe seu comentário aqui
+                <textarea id="text" cols="30" rows="3" placeholder="Deixe seu comentário aqui..."></textarea>
+                </label>
+            </div>
             
             <input type="submit" id="submit"/>
         </form>
